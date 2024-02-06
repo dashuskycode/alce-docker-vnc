@@ -45,4 +45,4 @@ RUN echo "dockeruser:password" | chpasswd #CHANGEME
 
 ADD ./entrypoint.sh /opt/entrypoint.sh
 
-CMD su vmuser --command /opt/entrypoint.sh
+CMD su dockeruser --command /opt/entrypoint.sh
